@@ -1,0 +1,29 @@
+body {
+height:100%;
+background-image: url("/img/blue-sky.jpg");
+
+}
+
+div#container {
+
+position: absolute;
+width: 90%;
+height: 93%;
+margin-top:5%;
+margin-left:5%;
+border: 1px;
+border-color: black;
+border-style: solid;
+border-radius: 5px;
+background-color: #999966;
+
+}
+
+
+#map-canvas {
+	  
+position:relative;
+height: 100%;
+margin: 0;
+padding: 0;
+}
