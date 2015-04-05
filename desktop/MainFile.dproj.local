@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015.04.04 15:36:43.425.pas,C:\Users\Virous\Documents\RAD Studio\Projects\Unit1.pas=F:\Delphi\Software\CromoSky\MainForm.pas</Transaction>
+    <Transaction>2015.04.04 15:36:43.425.dfm,C:\Users\Virous\Documents\RAD Studio\Projects\Unit1.dfm=F:\Delphi\Software\CromoSky\MainForm.dfm</Transaction>
+    <Transaction>2015.04.04 15:36:48.413.dproj,C:\Users\Virous\Documents\RAD Studio\Projects\Project1.dproj=F:\Delphi\Software\CromoSky\MainFile.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -9,7 +9,7 @@ div#container {
 position: absolute;
 width: 90%;
 height: 93%;
-margin-top:5%;
+margin-top: 2%;
 margin-left:5%;
 border: 1px;
 border-color: black;
@@ -19,11 +19,3 @@ background-color: #999966;
 
 }
 
-
-#map-canvas {
-	  
-position:relative;
-height: 100%;
-margin: 0;
-padding: 0;
-}

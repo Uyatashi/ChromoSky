@@ -52,8 +52,8 @@ if(empty($_GET))
 			echo('descriptions['. $i .']=(\'');
 			echo('<div class="container">');
 			echo('<div style = "height: 150px; width: 300px;">');
-			echo('<div style="height: 100px; float:left; width: 100px; background-color:rgb(' . $info[2] . ',' . $info[3] . ',' . $info[4] . ');" >T:</div>');
-			echo('<div style="height: 100px; margin-left:110px; width: 100px; background-color:rgb(' . $info[5] . ',' . $info[6] . ',' . $info[7] . ');" >E:</div>');
+			echo('<div style="height: 100px; font-size: 60pt; text-align:center; font-weight: bold; color:white; float:left; width: 100px; background-color:rgb(' . $info[2] . ',' . $info[3] . ',' . $info[4] . ');" >T</div>');
+			echo('<div style="height: 100px; font-size: 60pt; text-align:center; font-weight: bold; color:white;margin-left:110px; width: 100px; background-color:rgb(' . $info[5] . ',' . $info[6] . ',' . $info[7] . ');" >E</div>');
 			echo('<br><b>Difference: </b>' . $info[8]);
 			echo('<br><b>Time: </b>' . date('m/d/Y', $info[9]));
 			echo('</div>');
@@ -84,9 +84,9 @@ if(empty($_GET))
 	</div>
 	<form style="position:relative; margin-top: 15px;"action="time_analyze.php" method="POST">
 	Start
-	<input type="datetime-local" name="start_time">
+	<input type="date" name="start_time">
 	Finish
-	<input type="datetime-local" name="finish_time">
+	<input type="date" name="finish_time">
 	<button type="SUBMIT">Submit</button>
 	</form>
 </div>

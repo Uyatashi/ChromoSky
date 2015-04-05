@@ -45,11 +45,11 @@ if(empty($_GET))
 			$dets = explode(" ", $valid_locations[$count]);
 			echo('descriptions['. $count .']=(\'');
 			echo('<div style = "height: 150px; width: 300px;">');
-			echo('<div style="height: 100px; float:left; width: 100px; background-color:rgb(' . $dets[2] . ',' . $dets[3] . ',' . $dets[4] . ');" >T:</div>');
-			echo('<div style="height: 100px; margin-left:110px; width: 100px; background-color:rgb(' . $dets[5] . ',' . $dets[6] . ',' . $dets[7] . ');" >E:</div>');
+			echo('<div style="height: 100px; font-size: 60pt; text-align:center; font-weight: bold; color:white;float:left; width: 100px; background-color:rgb(' . $dets[2] . ',' . $dets[3] . ',' . $dets[4] . ');" >T</div>');
+			echo('<div style="height: 100px; font-size: 60pt; text-align:center; font-weight: bold; color:white;margin-left:110px; width: 100px; background-color:rgb(' . $dets[5] . ',' . $dets[6] . ',' . $dets[7] . ');" >E</div>');
 			echo('<br><b>Difference: </b>' . $dets[8]);
-			echo('<br><b>Time:b</b>' . date('m/d/Y', $dets[9]));
-			echo('</div>');
+			echo('<br><b>Time:</b>' . date('m/d/Y', $dets[9]));
+			echo('<br></div>');
 			echo('\');');
 			echo('var coords = new google.maps.LatLng('.($dets[0]+(rand(-60 ,60)/36000)).','.($dets[1]+(rand(-60 ,60)/36000)).');'."\r\n");
 			echo('var marker = new google.maps.Marker({position:coords,title:"'.'dsfjh'.'",animation:google.maps.Animation.DROP});'."\r\n");
@@ -67,7 +67,12 @@ if(empty($_GET))
 </head>
 <body>
 <div id='container'>
-	<div id="map-canvas">
+	<div id="map-canvas" style="
+	  position:relative;
+	  height: 100%;
+	  margin: 0;
+	  padding: 0;
+	  }">>
 	</div>
 </div>
 </body>
