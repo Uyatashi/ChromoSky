@@ -20,6 +20,7 @@ if(empty($_GET))
 <!DOCTYPE html>
 <head>
 	<link href="css/map.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" type="image/jpg" href="img/logo.png">
 	<title> Results </title>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<?php echo($api_code);?>"></script>
     <script type="text/javascript">
