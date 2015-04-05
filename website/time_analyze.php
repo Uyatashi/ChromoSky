@@ -1,8 +1,10 @@
 <?php
-			$start = $_POST['start_time'];
-			$finish = $_POST['finish_time'];
-			$start = strtotime($start);
+			$start = $_POST['start_time']; 
+			$finish = $_POST['finish_time']; 
+			$start = strtotime($start); 
 			$finish = strtotime($finish);
+			$start = floor($start/(3600*24)) * 3600 * 24;
+			$finish = floor($finish/(3600*24)) * 3600 * 24;
 			$i = 0;
 			$valid_locations = array();
 			$locations = fopen("input.txt", "r");

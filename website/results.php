@@ -40,11 +40,13 @@ if(empty($_GET))
 	  markers=Array();
 	  descriptions=Array();
 	  <?php
-		for($count = 0; $count < $i; $count++ )
+	  $i=-1;
+		foreach($valid_locations as $value)
 		{
+			$i++;
 			//$res_loc = trim($valid_locations[$count]);
-			$dets = explode(" ", $valid_locations[$count]);
-			echo('descriptions['. $count .']=(\'');
+			$dets = explode(" ", $value);
+			echo('descriptions['. $i .']=(\'');
 			echo('<div style = "height: 150px; width: 300px;">');
 			echo('<div style="height: 100px; font-size: 60pt; text-align:center; font-weight: bold; color:white;float:left; width: 100px; background-color:rgb(' . $dets[2] . ',' . $dets[3] . ',' . $dets[4] . ');" >T</div>');
 			echo('<div style="height: 100px; font-size: 60pt; text-align:center; font-weight: bold; color:white;margin-left:110px; width: 100px; background-color:rgb(' . $dets[5] . ',' . $dets[6] . ',' . $dets[7] . ');" >E</div>');
@@ -54,10 +56,9 @@ if(empty($_GET))
 			echo('\');');
 			echo('var coords = new google.maps.LatLng('.($dets[0]+(rand(-60 ,60)/36000)).','.($dets[1]+(rand(-60 ,60)/36000)).');'."\r\n");
 			echo('var marker = new google.maps.Marker({position:coords,title:"'.'dsfjh'.'",animation:google.maps.Animation.DROP});'."\r\n");
-			echo('markers['.$count.']=marker;'."\r\n");
-			echo('markers['.$count.'].setMap(map);');
-			echo('google.maps.event.addListener(markers['.$count.'],"click",function(){onMarkerClick('.$count.')});');
-			$count++;
+			echo('markers['.$i.']=marker;'."\r\n");
+			echo('markers['.$i.'].setMap(map);');
+			echo('google.maps.event.addListener(markers['.$i.'],"click",function(){onMarkerClick('.$i.')});');
 		}
 	  ?>
 	  
